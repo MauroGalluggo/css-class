@@ -1,0 +1,82 @@
+* {
+    margin:0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.container {
+  margin-top: 25px; 
+  width: 50vw;
+  margin-left: auto; 
+  margin-right: auto; 
+  background-color: #BADA55;
+  position:relative; 
+  font-family: 'Roboto', sans-serif; 
+}
+
+/* STEP ONE - the box model - what will the width of the box be?*/
+
+/*the width will be 410 px because it adds up 350width (2x25)padding (2x5)border*/
+.box1 {
+  background-color: purple;
+  width: 350px;
+  height: 150px;
+  margin: 10px;
+  padding: 25px;
+  border: 5px solid #000;
+  /*how do we set different borders on each side - after break*/
+
+}
+
+/* STEP TWO - overflow */ 
+.box2 {
+    background-color: orange; 
+    width: 350px;
+    /*height: 15px;*/
+    margin: 10px;
+    padding: 25px;
+    border: 5px solid #000;
+    /*overflow: auto;*/
+  /* STEP THREE - positioning */
+  /*fixed is relative of the screen if we had absolute the box would be at the bottom of the container(parent)*/
+    position: fixed;
+    bottom: 0;
+    left: 100px;
+    /*z-index: -1;
+    z index decides if a box will be on top of each other of not*/
+}
+
+
+
+/* STEP FOUR  - cool pseudo selectors  */ 
+
+/* :not */ 
+/*setting the font to italic but not the one inside .box2*/
+
+.ex1 p:not(.box2){
+  font-style: italic;
+}
+
+/* :has( ) */ 
+
+article h1{
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+article h2{
+  font-size: 1.5rem;
+  color: #666;
+}
+
+/*style the h1 that has a h2 sibling*/
+article h1:has(+ h2) {
+  padding-bottom: 2.5rem;
+}
+
+
+/* STEP FIVE - SIZING ELEMENTS IN CSS - absolute and relative units */ 
+
+.box1 {
+  width: 100%;
+}

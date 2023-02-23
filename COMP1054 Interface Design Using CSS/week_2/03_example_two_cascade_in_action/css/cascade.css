@@ -1,0 +1,42 @@
+/* position */
+/* the one that comes later is the one that will be apllied in this case the red color */
+
+h2{
+    color: purple;
+}
+
+h2{
+    color: red;
+}
+/*specificity*/
+/* .wrapper will be applied because it is more specific, the more specific one will be applied first */
+
+.wrapper{
+    background-color: #BADA55;
+    color: #333;
+}
+
+div{
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* inheritance - not part of the cascade, but a related concept */
+/* "google is your friend" I didnt understand the teacher and seemed like she didnt know how to explain */
+/*self study online later if needed to use ths on assignment*/
+body{
+    color: purple;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+

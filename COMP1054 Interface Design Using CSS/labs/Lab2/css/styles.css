@@ -1,0 +1,154 @@
+
+/* Typography */ 
+
+html {
+    font-family: 'Fira Sans', sans-serif; 
+}
+
+h1, h2, h3 {
+    font-weight: 600; 
+}
+
+p {
+    font-weight: 300; 
+    line-height: 18px; 
+}
+
+
+/* Layout */ 
+
+.wrapper {
+    width: 80%; 
+    margin: 0 auto;
+    border: 2px solid #eaeaea;
+    border-radius: 10px;
+    padding: 40px; 
+}
+
+/* Navigation styles for the link button on top of the page, following the ones given in class as example */
+nav {
+    display: flex;
+    gap: 24px;
+}
+nav a {
+    text-decoration: none;
+    outline: none;
+    padding: 16px 32px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 100px;
+    text-transform: uppercase;
+}
+nav a:link {
+    background-color: #1db954;
+    color: black;
+}
+nav a:visited{
+    background-color: #179443;
+}
+nav a:focus{
+    border: 2px solid black;
+}
+nav a:hover {
+    background-color: #1aa74c;
+}
+nav a:active {
+    background-color: #34c065;
+    
+}
+/* those are the two links outside navigation, I just changed colors to change their design.
+    I had an idea of turning the last link into a button too but I was afraid of not following the rules
+    on the assignment instructions. */
+.flex {
+    display:flex;
+    gap: 32px;  
+}
+.flex a{   
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none; 
+}
+.flex a:link {
+    color: #14823b; 
+}
+.flex a:visited,
+.flex a:focus {
+    color: purple;
+    text-decoration: underline; 
+}
+.flex a:hover {
+    color: #14823b;
+    text-decoration: underline;
+}
+.flex a:active {
+    color: #0f5d2a;
+    text-decoration: underline;
+}
+
+
+/* 2.) Add style to the two HTML tables featured in index.html, including a zebra striped pattern for the playlist table.
+    Ensure styles added help to enhance the user interface and follow best practices.  */
+
+    /*this is the playlist table */
+#playlist table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+#playlist thead th {
+    text-align: center;
+    padding: 16px;
+    background-color: #14823b;
+}
+
+#playlist td{
+    padding: 8px;
+}
+
+#playlist tbody tr:nth-child(even) {
+    background-color: #bbeacc;
+}
+
+/*this is the smaller table in the bottom inside the id feature*/
+#features table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+#features thead th {
+    text-align: center;
+    padding: 16px;
+    background-color: #14823b;
+}
+
+#features td{
+    padding: 8px;
+}
+
+#features tbody tr:nth-child(odd) {
+    background-color: #bbeacc;
+}
+
+
+
+#features > div {
+    flex: 1; 
+}
+
+
+/* I only made simple changes to the list items, I was out of ideas and didnt want to simply copy what was done on the table above */
+li{
+    padding: 8px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+img {
+    max-height: 300px; 
+    width: auto; 
+}
+
+main section {
+    padding-top: 60px; 
+}
+

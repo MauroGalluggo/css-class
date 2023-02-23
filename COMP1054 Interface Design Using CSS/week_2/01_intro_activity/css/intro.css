@@ -1,0 +1,57 @@
+/* Welcome to Week 2! Let's start off with a little CSS practice. Please complete the following tasks 
+1.) Include this stylesheet (intro.css) in your HTML document 
+2.) Add the followng styles to div element 
+*/
+.wrapper{
+    width: 90%; 
+    margin: 0 auto; 
+    background: #BADA55; 
+}
+/*
+What changes when you add these styles?
+    it sets the box where everything else is inside and change the background colour to green
+
+3.)Change the size of the h1 to twice the size of the root/html element. The root element is 16px.
+*/
+h1{
+    font-size: 2em;
+}
+/*
+4.)Change all h2 elements to the hex colour #c0ffee
+*/
+h2{
+    color: #c0ffee;
+}
+/*
+5.) Change the third h2 element color to #ff4040 try to do this without adding an ID or a CLASS) 
+this is an eemplo of combinator, I am targeting hw that is inside the section that is a sibling of anther section*/
+main section + section + section h2{
+    color: #ff4040;
+}
+
+/*
+6.) What is the relationship between the footer element and the main element (child, ancestor, sibling)? 
+    Siblings elements
+
+7.) What is the relationship between the ol element and the li element (child, ancestor, sibling)? 
+
+
+8.) Bonus challenge - change the size and color of the second li element in the order list and unordered list to #8A2BE2 and 20px; 
+*/
+ol li:nth-of-type(3),
+ul li:nth-of-type(3){
+    font-size: 20px;
+    color: #8A2BE2;
+}
+/*
+*/
+
+
+
+
+
+
+
+
+
+

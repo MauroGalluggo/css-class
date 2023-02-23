@@ -1,0 +1,38 @@
+/*
+I used last class as a reference for almost everything with the exception of the list of favorite things
+*/
+div.wrapper {
+    width: 40%;
+    margin: 0 auto;
+    background-color: #e4eaef;
+    color: #333;
+    text-align: center;
+    border-style: solid;
+}
+
+img {
+    width: 40%;
+}
+
+/*
+I understood that the paragraph was the only thing supposed to be a different color,
+but I was a little confused about the instructions so went with what I orriginally understod
+that was setting only the paragraph a different color
+*/
+main > p {
+    text-align: center;
+    color: red;
+}
+
+/* 
+https://www.w3schools.com/cssref/sel_nth-child.php
+I found this link when looking for a suitable selector to make the odd points bold
+after trying a few different things I was able to achive the desired result
+*/
+li:nth-child(odd) {
+    font-weight: bold;
+}
+
+li {
+    text-align: left;
+}

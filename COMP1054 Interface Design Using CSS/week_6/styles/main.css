@@ -1,0 +1,173 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    /* font size by default is 16px, let's change it to 10px to make REMS easier to work with */
+    font-size: 10px;
+}
+
+/* Layout */
+
+.container {
+    background-color: #eaeaea;
+    min-height: 100vh;
+    /*padding-bottom: 100px;*/
+}
+
+article {
+    width: 65vw;
+    padding: 3rem;
+    background-color: #F5F5DC;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+article img {
+    float: left;
+    padding-right: 3rem;
+    max-height: 400px;
+    max-width: 100%;
+    filter: sepia(100%);
+}
+
+/*  CHALLENGE ONE - alter the image using the filter property, altered image should only appear when the user hovers on the image */
+
+article img:hover {
+    filter: sepia(0%);
+}
+
+
+/* CHALLENGE TW0 - create a "sticky footer" (always at the bottom of the viewport*/
+footer {
+    clear: left;
+    background-color: black;
+    color: #fff;
+    padding: 2rem 0;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
+
+/* Navigation */
+/* CHALLENGE THREE -  style the navigation links */
+
+nav {
+    padding: 2.5em;
+    text-align: center;
+}
+
+nav a {
+    color: #56382e;
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding: 2em 0;
+    margin-right: 2em;
+}
+
+nav a:visited {
+    color: #71503A;
+}
+
+nav a:focus {
+    border: 1px dotted #71503a;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active {
+    border: 1px dotted #F5F5DC;
+}
+
+
+/*Typography */
+
+/*locally hosted fonts */
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('assets/OpenSans-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'open_sansregular', sans-serif;
+}
+
+h1,
+h2,
+blockquote,
+nav a {
+    font-family: 'Courgette', cursive;
+}
+
+h1 {
+    font-size: 6rem;
+    /* about 60px */
+    color: #472A28;
+}
+
+h2 {
+    font-size: 4.5rem;
+    color: #A3795B;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+h4 {
+    font-size: 3.5rem;
+}
+
+h5 {
+    font-size: 3rem;
+}
+
+h6 {
+    font-size: 2.5rem;
+}
+
+p,
+figcaption {
+    font-size: 1.8rem;
+    /* 18px*/
+    margin-top: 2em;
+    line-height: 1.5;
+}
+
+figcaption {
+    text-align: right;
+    font-weight: bold;
+
+
+}
+
+figure {
+    padding: 2em;
+    margin: 2em 0;
+    background-color: #C6AB80;
+}
+
+p {
+    text-indent: 1.5rem;
+    /*max-width:80ch;*/
+}
+
+blockquote p {
+    font-size: 2.5rem;
+    /*25 px */
+    max-width: 70ww;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0;
+    letter-spacing: 0.10rem;
+}
